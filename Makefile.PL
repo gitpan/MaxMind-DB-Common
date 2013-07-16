@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Code shared by the MaxMind::DB:Reader and MaxMind::DB::Writer modules",
+  "ABSTRACT" => "Code shared by the DB reader and writer modules",
   "AUTHOR" => "Dave Rolsky <autarch\@urth.org>, Olaf Alders <olaf\@wundercounter.com>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
@@ -20,14 +20,17 @@ my %WriteMakefileArgs = (
   "LICENSE" => "artistic_2",
   "NAME" => "MaxMind::DB::Common",
   "PREREQ_PM" => {
+    "Carp" => 0,
     "Data::Dumper::Concise" => 0,
     "DateTime" => 0,
     "Exporter" => 0,
+    "List::AllUtils" => 0,
     "Math::Int128" => 0,
-    "Moose" => 0,
-    "Moose::Role" => 0,
-    "Moose::Util::TypeConstraints" => 0,
-    "MooseX::StrictConstructor" => 0,
+    "Moo" => 0,
+    "Moo::Role" => 0,
+    "MooX::StrictConstructor" => 0,
+    "Scalar::Util" => 0,
+    "Sub::Quote" => 0,
     "autodie" => 0,
     "constant" => 0,
     "namespace::autoclean" => 0,
@@ -35,11 +38,11 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "Test::More" => 0
+    "Test::More" => "0.88"
   },
-  "VERSION" => "0.3.0",
+  "VERSION" => "0.031000",
   "test" => {
-    "TESTS" => "t/*.t t/MaxMind/DB/*.t t/Test/Maxmind/DB/Common/*.t"
+    "TESTS" => "t/*.t t/MaxMind/DB/*.t"
   }
 );
 

@@ -1,6 +1,9 @@
 package MaxMind::DB::Role::Debugs;
 {
-  $MaxMind::DB::Role::Debugs::VERSION = '0.3.0'; # TRIAL
+  $MaxMind::DB::Role::Debugs::VERSION = '0.031000';
+}
+BEGIN {
+  $MaxMind::DB::Role::Debugs::AUTHORITY = 'cpan:TJMATHER';
 }
 
 use strict;
@@ -8,7 +11,7 @@ use warnings;
 use namespace::autoclean;
 use autodie;
 
-use Moose::Role;
+use Moo::Role;
 
 sub _debug_newline {
     warn "\n";

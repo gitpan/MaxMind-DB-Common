@@ -1,10 +1,21 @@
 package MaxMind::DB::Common;
 {
-  $MaxMind::DB::Common::VERSION = '0.3.0'; # TRIAL
+  $MaxMind::DB::Common::VERSION = '0.031000';
+}
+BEGIN {
+  $MaxMind::DB::Common::AUTHORITY = 'cpan:TJMATHER';
 }
 
 use strict;
 use warnings;
+
+# This is a hack to let us test code that requires a specific
+# MaxMind::DB::Common version against the MaxMind-DB-Common git repo code, but
+# without actually setting the $VERSION variable.
+BEGIN {
+    $MaxMind::DB::Common::{VERSION} = \99
+        unless exists $MaxMind::DB::Common::{VERSION};
+}
 
 use constant {
     LEFT_RECORD                 => 0,
@@ -14,11 +25,38 @@ use constant {
 
 use Exporter qw( import );
 
-our @EXPORT_OK = qw( LEFT_RECORD RIGHT_RECORD DATA_SECTION_SEPARATOR_SIZE );
+our %TypeNumToName = (
+    0  => 'extended',
+    1  => 'pointer',
+    2  => 'utf8_string',
+    3  => 'double',
+    4  => 'bytes',
+    5  => 'uint16',
+    6  => 'uint32',
+    7  => 'map',
+    8  => 'int32',
+    9  => 'uint64',
+    10 => 'uint128',
+    11 => 'array',
+    12 => 'container',
+    13 => 'end_marker',
+    14 => 'boolean',
+    15 => 'float',
+);
+
+our %TypeNameToNum = reverse %TypeNumToName;
+
+our @EXPORT_OK = qw(
+    LEFT_RECORD
+    RIGHT_RECORD
+    DATA_SECTION_SEPARATOR_SIZE
+    %TypeNumToName
+    %TypeNameToNum
+);
 
 1;
 
-# ABSTRACT: Code shared by the MaxMind::DB:Reader and MaxMind::DB::Writer modules
+# ABSTRACT: Code shared by the DB reader and writer modules
 
 __END__
 
@@ -26,11 +64,16 @@ __END__
 
 =head1 NAME
 
-MaxMind::DB::Common - Code shared by the MaxMind::DB:Reader and MaxMind::DB::Writer modules
+MaxMind::DB::Common - Code shared by the DB reader and writer modules
 
 =head1 VERSION
 
-version 0.3.0
+version 0.031000
+
+=head1 DESCRIPTION
+
+This first release is being done for the sake of the L<GeoIP2> package. Real
+documentation for this distro is forthcoming.
 
 =head1 AUTHORS
 

@@ -1,6 +1,9 @@
 package Test::MaxMind::DB::Common::Data;
 {
-  $Test::MaxMind::DB::Common::Data::VERSION = '0.3.0'; # TRIAL
+  $Test::MaxMind::DB::Common::Data::VERSION = '0.031000';
+}
+BEGIN {
+  $Test::MaxMind::DB::Common::Data::AUTHORITY = 'cpan:TJMATHER';
 }
 
 use strict;
@@ -582,41 +585,3 @@ sub _boolean {
 }
 
 1;
-
-# ABSTRACT: Data required for testing MaxMind::DB::Reader and MaxMind::DB::Writer
-
-__END__
-
-=pod
-
-=head1 NAME
-
-Test::MaxMind::DB::Common::Data - Data required for testing MaxMind::DB::Reader and MaxMind::DB::Writer
-
-=head1 VERSION
-
-version 0.3.0
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Olaf Alders <olaf@wundercounter.com>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is Copyright (c) 2013 by MaxMind, Inc..
-
-This is free software, licensed under:
-
-  The Artistic License 2.0 (GPL Compatible)
-
-=cut

@@ -1,11 +1,11 @@
 {
-   "abstract" : "Code shared by the MaxMind::DB:Reader and MaxMind::DB::Writer modules",
+   "abstract" : "Code shared by the DB reader and writer modules",
    "author" : [
       "Dave Rolsky <autarch@urth.org>",
       "Olaf Alders <olaf@wundercounter.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "artistic_2"
    ],
@@ -28,14 +28,17 @@
       },
       "runtime" : {
          "requires" : {
+            "Carp" : "0",
             "Data::Dumper::Concise" : "0",
             "DateTime" : "0",
             "Exporter" : "0",
+            "List::AllUtils" : "0",
             "Math::Int128" : "0",
-            "Moose" : "0",
-            "Moose::Role" : "0",
-            "Moose::Util::TypeConstraints" : "0",
-            "MooseX::StrictConstructor" : "0",
+            "Moo" : "0",
+            "Moo::Role" : "0",
+            "MooX::StrictConstructor" : "0",
+            "Scalar::Util" : "0",
+            "Sub::Quote" : "0",
             "autodie" : "0",
             "constant" : "0",
             "namespace::autoclean" : "0",
@@ -45,11 +48,11 @@
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0"
+            "Test::More" : "0.88"
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "mailto" : "bug-maxmind-db-common@rt.cpan.org",
@@ -57,10 +60,11 @@
       },
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/maxmind/MaxMind-DB-perl.git",
-         "web" : "https://github.com/maxmind/MaxMind-DB-perl"
+         "url" : "git://github.com/maxmind/MaxMind-DB-Common-perl.git",
+         "web" : "https://github.com/maxmind/MaxMind-DB-Common-perl"
       }
    },
-   "version" : "0.3.0"
+   "version" : "0.031000",
+   "x_authority" : "cpan:TJMATHER"
 }
 
