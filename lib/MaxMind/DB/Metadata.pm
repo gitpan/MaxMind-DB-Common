@@ -1,6 +1,6 @@
 package MaxMind::DB::Metadata;
 {
-  $MaxMind::DB::Metadata::VERSION = '0.031000';
+  $MaxMind::DB::Metadata::VERSION = '0.031001';
 }
 BEGIN {
   $MaxMind::DB::Metadata::AUTHORITY = 'cpan:TJMATHER';

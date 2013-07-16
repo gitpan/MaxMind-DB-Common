@@ -55,8 +55,7 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "mailto" : "bug-maxmind-db-common@rt.cpan.org",
-         "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=MaxMind-DB-Common"
+         "web" : "https://github.com/maxmind/MaxMind-DB-Common-perl/issues"
       },
       "repository" : {
          "type" : "git",
@@ -64,7 +63,7 @@
          "web" : "https://github.com/maxmind/MaxMind-DB-Common-perl"
       }
    },
-   "version" : "0.031000",
+   "version" : "0.031001",
    "x_authority" : "cpan:TJMATHER"
 }
 

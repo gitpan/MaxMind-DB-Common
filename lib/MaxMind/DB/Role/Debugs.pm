@@ -1,6 +1,6 @@
 package MaxMind::DB::Role::Debugs;
 {
-  $MaxMind::DB::Role::Debugs::VERSION = '0.031000';
+  $MaxMind::DB::Role::Debugs::VERSION = '0.031001';
 }
 BEGIN {
   $MaxMind::DB::Role::Debugs::AUTHORITY = 'cpan:TJMATHER';
@@ -48,7 +48,7 @@ sub _debug_string {
 sub _debug_sprintf {
     my $self = shift;
 
-    warn sprintf( shift . "\n", @_ );
+    warn sprintf( shift() . "\n", @_ );
 }
 
 sub _debug_structure {

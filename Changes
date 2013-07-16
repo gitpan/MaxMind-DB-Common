@@ -1,3 +1,8 @@
+0.031001 2013-07-16
+
+- Fixed a test failure with Perl 5.10.
+
+
 0.031000 2013-07-16
 
 - First release upon an unsuspecting world.
