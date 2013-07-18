@@ -1,6 +1,6 @@
 package MaxMind::DB::Common;
 {
-  $MaxMind::DB::Common::VERSION = '0.031001';
+  $MaxMind::DB::Common::VERSION = '0.031002';
 }
 BEGIN {
   $MaxMind::DB::Common::AUTHORITY = 'cpan:TJMATHER';
@@ -68,7 +68,7 @@ MaxMind::DB::Common - Code shared by the DB reader and writer modules
 
 =head1 VERSION
 
-version 0.031001
+version 0.031002
 
 =head1 DESCRIPTION
 

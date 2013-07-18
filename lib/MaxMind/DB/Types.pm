@@ -1,6 +1,6 @@
 package MaxMind::DB::Types;
 {
-  $MaxMind::DB::Types::VERSION = '0.031001';
+  $MaxMind::DB::Types::VERSION = '0.031002';
 }
 BEGIN {
   $MaxMind::DB::Types::AUTHORITY = 'cpan:TJMATHER';

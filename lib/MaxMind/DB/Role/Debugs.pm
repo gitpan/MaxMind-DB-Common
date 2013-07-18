@@ -1,6 +1,6 @@
 package MaxMind::DB::Role::Debugs;
 {
-  $MaxMind::DB::Role::Debugs::VERSION = '0.031001';
+  $MaxMind::DB::Role::Debugs::VERSION = '0.031002';
 }
 BEGIN {
   $MaxMind::DB::Role::Debugs::AUTHORITY = 'cpan:TJMATHER';
@@ -40,7 +40,8 @@ sub _debug_string {
     my $label  = shift;
     my $string = shift;
 
-    $string //= '<undef>';
+    $string = '<undef>'
+        unless defined $string;
 
     warn "$label: $string\n";
 }

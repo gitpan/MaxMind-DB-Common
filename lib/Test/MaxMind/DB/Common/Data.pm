@@ -1,6 +1,6 @@
 package Test::MaxMind::DB::Common::Data;
 {
-  $Test::MaxMind::DB::Common::Data::VERSION = '0.031001';
+  $Test::MaxMind::DB::Common::Data::VERSION = '0.031002';
 }
 BEGIN {
   $Test::MaxMind::DB::Common::Data::AUTHORITY = 'cpan:TJMATHER';
