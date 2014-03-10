@@ -1,11 +1,11 @@
 {
-   "abstract" : "Code shared by the DB reader and writer modules",
+   "abstract" : "Code shared by the MaxMind DB reader and writer modules",
    "author" : [
-      "Dave Rolsky <autarch@urth.org>",
-      "Olaf Alders <olaf@wundercounter.com>"
+      "Dave Rolsky <drolsky@maxmind.com>",
+      "Olaf Alders <oalders@maxmind.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.131560",
+   "generated_by" : "Dist::Zilla version 5.013, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "artistic_2"
    ],
@@ -23,6 +23,8 @@
       "develop" : {
          "requires" : {
             "Test::CPAN::Changes" : "0.19",
+            "Test::More" : "0",
+            "Test::NoTabs" : "0",
             "Test::Pod" : "1.41"
          }
       },
@@ -63,7 +65,7 @@
          "web" : "https://github.com/maxmind/MaxMind-DB-Common-perl"
       }
    },
-   "version" : "0.031002",
+   "version" : "0.031003",
    "x_authority" : "cpan:TJMATHER"
 }
 

@@ -1,11 +1,5 @@
 package MaxMind::DB::Role::Debugs;
-{
-  $MaxMind::DB::Role::Debugs::VERSION = '0.031002';
-}
-BEGIN {
-  $MaxMind::DB::Role::Debugs::AUTHORITY = 'cpan:TJMATHER';
-}
-
+$MaxMind::DB::Role::Debugs::VERSION = '0.031003';
 use strict;
 use warnings;
 use namespace::autoclean;

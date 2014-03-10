@@ -1,11 +1,5 @@
 package Test::MaxMind::DB::Common::Util;
-{
-  $Test::MaxMind::DB::Common::Util::VERSION = '0.031002';
-}
-BEGIN {
-  $Test::MaxMind::DB::Common::Util::AUTHORITY = 'cpan:TJMATHER';
-}
-
+$Test::MaxMind::DB::Common::Util::VERSION = '0.031003';
 use strict;
 use warnings;
 
